@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Movie Compare</title>
+</head>
+<body>
+    <div class="upper">
+        <h1 class="title">Movies Hub</h1>
+    <h3 class="axios">Compare you favourite movies</h3>
+    </div>
+    <div class="container">
+        <div class="columns">
+            <div class="column">
+                <div id="left-autocomplete"></div>
+                <div id="left-summary"></div>
+            </div>
+            <div class="column">
+                <div id="right-autocomplete"></div>
+                <div id="right-summary"></div>
+            </div>
+        </div>
+        <div class="column is-full notification is-primary tutorial">
+            <h1 class="title awarness">Search for a MOVIE on Both Sides<br/></h1>
+            <p class="subtitle sub-awarness">We will tell you which is best!</p>
+        </div>
+    </div>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="utils.js"></script>
+    <script src="autocomplete.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>
